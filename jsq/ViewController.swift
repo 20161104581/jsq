@@ -384,7 +384,7 @@ class ViewController: UIViewController {
         
         if judge == 1{
             
-            result.text = String(format:"%f", d)
+            result.text = String(format:"%.2f", d)
             
         }else {
             
