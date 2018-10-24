@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     var judge = 0//决定输出数字的位数
     
-    var add = 0
+    var add = 0//判断运算符次数
     
     var re = 0//判断result.text前是否存在符号
     
