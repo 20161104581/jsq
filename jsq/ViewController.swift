@@ -175,7 +175,8 @@ class ViewController: UIViewController {
     
     @IBAction func clear(_ sender: Any) {
         result.text = ""
-        
+        result_1.text = ""
+        result_2.text = ""
         re = 0
         
     }
@@ -214,6 +215,7 @@ class ViewController: UIViewController {
                 number = 1
                 
                 re = 0
+                add = 1
                 
             }
             
@@ -254,6 +256,8 @@ class ViewController: UIViewController {
                 number = 2
                 
                 re = 0
+                
+                add = 1
                 
             }
             
