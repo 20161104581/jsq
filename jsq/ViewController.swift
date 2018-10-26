@@ -35,6 +35,10 @@ class ViewController: UIViewController {
     var add = 0//判断运算符次数
     
     var re = 0//判断result.text前是否存在符号
+    var op = 0//判断加号
+    var om = 0//判断减法
+    var omu = 0//判断乘法
+    var od = 0//判断除法
     
     @IBAction func number1(_ sender: Any) {
         if re == 1{
@@ -44,6 +48,9 @@ class ViewController: UIViewController {
         }else{
             
             result.text = result.text! + "1"
+            
+            
+            
             
         }
         
@@ -102,15 +109,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number6(_ sender: Any) {
+        
         if re == 1{
-            
             result.text = "6"
-            
         }else{
-            
             result.text = result.text! + "6"
-            
         }
+       
+        
         
     }
     
@@ -217,6 +223,7 @@ class ViewController: UIViewController {
                 re = 0
                 add = 1
                 
+                
             }
             
         }
@@ -224,6 +231,11 @@ class ViewController: UIViewController {
        
     @IBAction func plus(_ sender: Any) {
         if add == 1{
+            
+            if op == 1{
+            
+            
+            
             
             let a = Double(result_1.text!)!
             
@@ -239,7 +251,59 @@ class ViewController: UIViewController {
             
             re = 1
             
-        }else{
+        }
+            if om == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a - b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 1
+                
+                re = 1
+            }
+            
+            if omu == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a * b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 3
+                
+                re = 1
+                
+            }
+            if od == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a / b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 4
+                
+                re = 1
+            }
+            
+            
+            
+            
+            else{
             
             if result.text == ""{
                 
@@ -258,6 +322,7 @@ class ViewController: UIViewController {
                 re = 0
                 
                 add = 1
+                op = 1
                 
             }
             
