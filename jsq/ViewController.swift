@@ -190,21 +190,75 @@ class ViewController: UIViewController {
     @IBAction func minus(_ sender: Any) {
         if add == 1{
             
-        let a = Double(result_1.text!)!
+            if op == 1{
+                
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a + b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 2
+                
+                re = 1
+                
+            }
+            if om == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a - b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 1
+                
+                re = 1
+            }
             
-            let b = Double(result.text!)!
-            
-            let c = a - b
-            
-            result_1.text = String(c)
-            
-            result.text = ""
-            
-            number = 1
-            
-            re = 1
-            
-        }else{
+            if omu == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a * b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 3
+                
+                re = 1
+                
+            }
+            if od == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a / b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 4
+                
+                re = 1
+            }
+        }
+        
+        
+        
+        else{
             
             if result.text == ""{
                 
@@ -223,6 +277,11 @@ class ViewController: UIViewController {
                 re = 0
                 add = 1
                 
+                om = 1
+                od = 0
+                omu = 0
+                op = 0
+                
                 
             }
             
@@ -233,9 +292,6 @@ class ViewController: UIViewController {
         if add == 1{
             
             if op == 1{
-            
-            
-            
             
             let a = Double(result_1.text!)!
             
@@ -299,6 +355,7 @@ class ViewController: UIViewController {
                 
                 re = 1
             }
+        }
             
             
             
@@ -324,6 +381,11 @@ class ViewController: UIViewController {
                 add = 1
                 op = 1
                 
+                od = 0
+                om = 0
+                omu = 0
+                
+                
             }
             
         }
@@ -333,21 +395,72 @@ class ViewController: UIViewController {
     @IBAction func multiply(_ sender: Any) {
         if add == 1{
             
-            let a = Double(result_1.text!)!
+            if op == 1{
+                
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a + b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 2
+                
+                re = 1
+                
+            }
+            if om == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a - b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 1
+                
+                re = 1
+            }
             
-            let b = Double(result.text!)!
-            
-            let c = a * b
-            
-            result_1.text = String(c)
-            
-            result.text = ""
-            
-            number = 3
-            
-            re = 1
-            
-        }else{
+            if omu == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a * b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 3
+                
+                re = 1
+                
+            }
+            if od == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a / b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 4
+                
+                re = 1
+            }
+        }
+        else{
             
             if result.text == ""{
                 
@@ -366,32 +479,89 @@ class ViewController: UIViewController {
                 re = 0
                 
                 add = 1
+                omu = 1
+                
+                od = 0
+                om = 0
+                op = 0
                 
  
            }
             
         }
-        
     }
+        
+    
     
     @IBAction func divide(_ sender: Any) {
         if add == 1{
             
-            let a = Double(result_1.text!)!
+            if op == 1{
+                
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a + b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 2
+                
+                re = 1
+                
+            }
+            if om == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a - b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 1
+                
+                re = 1
+            }
             
-            let b = Double(result.text!)!
-            
-            let c = a / b
-            
-            result_1.text = String(c)
-            
-            result.text = ""
-            
-            number = 4
-            
-            re = 1
-            
-        }else{
+            if omu == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a * b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 3
+                
+                re = 1
+                
+            }
+            if od == 1{
+                let a = Double(result_1.text!)!
+                
+                let b = Double(result.text!)!
+                
+                let c = a / b
+                
+                result_1.text = String(c)
+                
+                result.text = ""
+                
+                number = 4
+                
+                re = 1
+            }
+        }
+        else{
             
             if result.text == ""{
                 
@@ -410,7 +580,11 @@ class ViewController: UIViewController {
                 re = 0
                 
                 add = 1
+                od = 1
                 
+                omu = 0
+                op = 0
+                om = 0
             }
             
         }
