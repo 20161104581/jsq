@@ -41,135 +41,66 @@ class ViewController: UIViewController {
     var od = 0//判断除法
     
     @IBAction func number1(_ sender: Any) {
-        if re == 1{
+        if re == 0{
             
-            result.text = "1"
-            
-        }else{
-            
-            result.text = result.text! + "1"
-            
-            
-            
-            
+           result.text = result.text! + "1"
         }
-        
     }
+        
+    
     
     @IBAction func number2(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "2"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "2"
-            
         }
-        
     }
     
     @IBAction func number3(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "3"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "3"
-            
         }
-        
     }
     
     @IBAction func number4(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "4"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "4"
-            
         }
-        
     }
     
     @IBAction func number5(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "5"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "5"
-            
         }
-        
     }
     
     @IBAction func number6(_ sender: Any) {
-        
-        if re == 1{
-            result.text = "6"
-        }else{
+        if re == 0{
             result.text = result.text! + "6"
         }
-       
-        
-        
     }
     
     @IBAction func number7(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "7"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "7"
-            
         }
-        
     }
     
     @IBAction func number8(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "8"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "8"
-            
         }
-        
     }
     
     @IBAction func number9(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "9"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "9"
-            
         }
-        
     }
     
     @IBAction func number0(_ sender: Any) {
-        if re == 1{
-            
-            result.text = "0"
-            
-        }else{
-            
+        if re == 0{
             result.text = result.text! + "0"
-            
         }
-        
     }
     
     @IBAction func dot(_ sender: Any) {
@@ -183,8 +114,6 @@ class ViewController: UIViewController {
         result.text = ""
         result_1.text = ""
         result_2.text = ""
-        re = 0
-        
     }
     
     @IBAction func minus(_ sender: Any) {
@@ -203,9 +132,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 1
-                
-                re = 1
-                
             }
             if om == 1{
                 let a = Double(result_1.text!)!
@@ -220,7 +146,6 @@ class ViewController: UIViewController {
                 
                 number = 1
                 
-                re = 1
             }
             
             if omu == 1{
@@ -235,9 +160,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 1
-                
-                re = 1
-                
             }
             if od == 1{
                 let a = Double(result_1.text!)!
@@ -251,8 +173,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 1
-                
-                re = 1
             }
         }
         
@@ -282,9 +202,7 @@ class ViewController: UIViewController {
                 omu = 0
                 op = 0
                 
-                
             }
-            
         }
     }
        
@@ -304,10 +222,8 @@ class ViewController: UIViewController {
             result.text = ""
             
             number = 2
-            
-            re = 1
-            
-        }
+        
+           }
             if om == 1{
                 let a = Double(result_1.text!)!
                 
@@ -320,8 +236,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 2
-                
-                re = 1
             }
             
             if omu == 1{
@@ -336,9 +250,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 2
-                
-                re = 1
-                
             }
             if od == 1{
                 let a = Double(result_1.text!)!
@@ -352,8 +263,7 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 2
-                
-                re = 1
+
             }
         }
             
@@ -384,10 +294,8 @@ class ViewController: UIViewController {
                 od = 0
                 om = 0
                 omu = 0
-                
-                
+
             }
-            
         }
         
     }
@@ -408,9 +316,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 3
-                
-                re = 1
-                
             }
             if om == 1{
                 let a = Double(result_1.text!)!
@@ -424,8 +329,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 3
-                
-                re = 1
             }
             
             if omu == 1{
@@ -440,9 +343,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 3
-                
-                re = 1
-                
             }
             if od == 1{
                 let a = Double(result_1.text!)!
@@ -456,8 +356,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 3
-                
-                re = 1
             }
         }
         else{
@@ -484,10 +382,7 @@ class ViewController: UIViewController {
                 od = 0
                 om = 0
                 op = 0
-                
- 
            }
-            
         }
     }
         
@@ -509,9 +404,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 4
-                
-                re = 1
-                
             }
             if om == 1{
                 let a = Double(result_1.text!)!
@@ -525,8 +417,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 4
-                
-                re = 1
             }
             
             if omu == 1{
@@ -541,9 +431,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 4
-                
-                re = 1
-                
             }
             if od == 1{
                 let a = Double(result_1.text!)!
@@ -557,8 +444,6 @@ class ViewController: UIViewController {
                 result.text = ""
                 
                 number = 4
-                
-                re = 1
             }
         }
         else{
@@ -635,16 +520,10 @@ class ViewController: UIViewController {
             
         }
         
-        re = 1
-        
         judge = 0
         
         add = 0
         
     }
-    
-
-    
-
 }
 
