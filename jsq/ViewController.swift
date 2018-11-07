@@ -202,7 +202,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 2
+                number = 1
                 
                 re = 1
                 
@@ -234,7 +234,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 3
+                number = 1
                 
                 re = 1
                 
@@ -250,7 +250,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 4
+                number = 1
                 
                 re = 1
             }
@@ -319,7 +319,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 1
+                number = 2
                 
                 re = 1
             }
@@ -335,7 +335,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 3
+                number = 2
                 
                 re = 1
                 
@@ -351,7 +351,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 4
+                number = 2
                 
                 re = 1
             }
@@ -407,7 +407,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 2
+                number = 3
                 
                 re = 1
                 
@@ -423,7 +423,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 1
+                number = 3
                 
                 re = 1
             }
@@ -455,7 +455,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 4
+                number = 3
                 
                 re = 1
             }
@@ -508,7 +508,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 2
+                number = 4
                 
                 re = 1
                 
@@ -524,7 +524,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 1
+                number = 4
                 
                 re = 1
             }
@@ -540,7 +540,7 @@ class ViewController: UIViewController {
                 
                 result.text = ""
                 
-                number = 3
+                number = 4
                 
                 re = 1
                 
