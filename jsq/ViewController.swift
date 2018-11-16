@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     var om = 0//判断减法
     var omu = 0//判断乘法
     var od = 0//判断除法
+    var rw = 0
     
     @IBAction func number1(_ sender: Any) {
         if re == 0{
@@ -104,16 +105,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dot(_ sender: Any) {
+        
+        
+        if rw == 0{
         result.text = result.text! + "."
         
         judge = 1
-        
+        rw = 1
+        }
+       
     }
     
     @IBAction func clear(_ sender: Any) {
         result.text = ""
         result_1.text = ""
         result_2.text = ""
+        rw = 0
     }
     
     @IBAction func minus(_ sender: Any) {
@@ -201,6 +208,8 @@ class ViewController: UIViewController {
                 od = 0
                 omu = 0
                 op = 0
+                
+                rw = 0
                 
             }
         }
@@ -294,6 +303,7 @@ class ViewController: UIViewController {
                 od = 0
                 om = 0
                 omu = 0
+                rw = 0
 
             }
         }
@@ -382,6 +392,7 @@ class ViewController: UIViewController {
                 od = 0
                 om = 0
                 op = 0
+                rw = 0
            }
         }
     }
@@ -470,6 +481,7 @@ class ViewController: UIViewController {
                 omu = 0
                 op = 0
                 om = 0
+                rw = 0
             }
             
         }
@@ -523,6 +535,7 @@ class ViewController: UIViewController {
         judge = 0
         
         add = 0
+        rw = 0
         
     }
 }
